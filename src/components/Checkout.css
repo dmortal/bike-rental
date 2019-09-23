@@ -1,0 +1,120 @@
+.Error{
+  border-left: 4px solid #FF0000;
+  color: #FF0000;
+  background: #FAFAFA;
+  padding: 10px;
+  margin: 10px;
+}
+.Wizard{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ContinueCta{
+  background: #1779ba;
+  color: #fefefe;
+  padding: 12px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 80%;
+}
+.ContinueCta--disabled{
+  background-color: #CECECE;
+  cursor: not-allowed;
+}
+.ContinueCta:hover{
+  background: #14679e;
+}
+.ContinueCta--disabled:hover{
+  background: #CECECE;
+}
+.Wizard__category{
+  margin: 5px 0;
+}
+.Wizard__category--active .Wizard__category__header{
+    background: #1779ba;
+    color: #FEFEFE;
+}
+.Wizard__category--active .Wizard__category__header:before{content:"\02228"}
+.Wizard__category__header{
+  padding: 10px 20px;
+  background: #FAFAFA;
+  border: 1px solid #EEE;
+  display: flex;
+  align-items: center;
+}
+  .Wizard__category__header:before{
+    content: "\02227";
+    font-size: 36px;
+    margin-right: 10px;
+    font-weight: 700;
+  }
+  .Wizard__category__items{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .Wizard__category--active .Wizard__category__items{
+    max-height: 1000px;
+    padding: 30px 0;
+  }
+  .Product{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    background-color: #FCFCFC;
+  }
+  .Product img{
+    align-self: center;
+  }
+  .Product__description{
+    padding: 10px 15px;
+    background-color: #333;
+    color: #FFF;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+    .Product__description__price:before{
+      content: "$";
+    }
+    .Product__quantity{
+      padding: 10px;
+      border: 1px solid #333;
+    }
+.Wizard__category__summary{
+  width: 100%;
+  border-collapse: collapse;
+}
+.Wizard__category__summary th:last-child, .Wizard__category__summary td:last-child{text-align: right;}
+.Wizard__category__summary tfoot th{
+  padding: 20px;
+  border-top: 1px solid #000;
+  background-color: #CCC;
+  color: #FFF;
+}
+.Wizard__category__summary thead th{
+  padding: 10px 20px;
+  background: #EFEFEF;
+  border-bottom: 2px solid #CFCFCF;
+}
+.Wizard__category__summary tbody td{
+  padding: 10px 20px;
+}
+.Wizard__category__summary tbody tr:nth-child(2n) td{
+  background-color: #FAFAFA;
+}
+@media (max-width: 400px){
+  .Wizard__category__items{
+    flex-direction: column;
+  }
+  .Product{
+    margin-bottom: 20px;
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "checkout_header": "Awesome Bike Shop",
+  "checkout_subheader": "Please select your bike rental options below",
+  "loading_text": "Loading data...",
+  "bike_selection_heading": "Please select a bike(s):",
+  "accessory_selection_heading": "Please select aaccessories:",
+  "summary_heading": "Review your selection",
+  "continueCta": "Continue",
+  "bike_selection_error": "Please select a bike to proceed",
+  "confirmation_header": "Thank you for your purchase!",
+  "confirmation_subheader": "We have sent a confirmation email with your order details"
+}
