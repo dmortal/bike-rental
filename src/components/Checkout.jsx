@@ -26,6 +26,9 @@ const Checkout = ({ history }) => {
     }, 1000);
   }, []);
   const handleSelection = (item, quantity) => {
+    if(!quantity.match(/^[0-9]*$/)){
+      return;
+    }
     const newSelection = { ...selection };
     const type = item.product_type === "bike" ? "bikes" : "accessories";
 
@@ -57,7 +60,7 @@ const Checkout = ({ history }) => {
       <input
         className="Product__quantity"
         type="text"
-        pattern="[0-9]+"
+        placeholder={i18n.quantity_placeholder}
         value={selection[type][item.id] ? selection[type][item.id].quantity : ''}
         onChange={e => handleSelection(item, e.target.value)}
       />

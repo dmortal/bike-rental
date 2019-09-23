@@ -5,6 +5,7 @@
   "bike_selection_heading": "Please select a bike(s):",
   "accessory_selection_heading": "Please select aaccessories:",
   "summary_heading": "Review your selection",
+  "quantity_placeholder": "Enter quantity",
   "continueCta": "Continue",
   "bike_selection_error": "Please select a bike to proceed",
   "confirmation_header": "Thank you for your purchase!",
